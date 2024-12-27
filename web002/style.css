@@ -1,0 +1,40 @@
+/*
+Селектор {
+    свойство1:значение1;
+    свойство2:значение2;
+}
+*/
+
+/* h2 {
+    color: red;
+} */
+
+#first {
+    background: #ccc;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+.title {
+    background-color: grey;
+}
+
+.heading {
+    color: darkblue;
+}
+
+.heading-about {
+    color: orange;
+}
+
+.inherit {
+    font-size: 18px;
+    color: red;
+}
+
+/* .inherit a {
+    color: inherit;
+} */
+
