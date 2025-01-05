@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Gilroy", sans-serif, Arial, Helvetica, sans-serif;
+    background: #FFF;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    padding-left: calc(50% - 585px);
+    padding-right: calc(50% - 585px);
+}
+
+.top {
+    padding-top: 40px;
+    padding-bottom: 96px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.menu__nav__link {
+    width: 533px;
+    display: flex;
+    flex-flow: row wrap;
+    /* flex-direction: row; 
+    flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__item__link {
+    font-size: 14px;
+    line-height: 16px;
+    color: #000;
+    font-weight: 600;
+}
+
+.link1 {
+    color: #F25822;
+}
+
+.top__content {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 39px;
+    margin-top: 84px;
+    margin-bottom: 259px;
+}
+
+.content__info {
+    width: 522px;
+}
+
+.content__info__title {
+    margin-bottom: 17px;
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.content__info__text {
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 500;
+    color: #888888;
+}
+
+.content__info__buttons {
+    margin-top: 37px;
+    /* width: 302px; */
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: space-between; */
+    justify-content: flex-start;
+    align-items: center;
+    gap: 72px;
+}
+
+.btn1 {
+    font-family: "Gilroy";
+    padding: 15px 36px 16px 35px;
+    border: none;
+    background: #F25822;
+    box-shadow: 4px 4px 8px rgba(242, 88, 34, 0.2);
+    border-radius: 50px;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.btn2 {
+    font-family: "Gilroy";
+    border: none;
+    background: none;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #AAAAAA;
+}
+
+.top__logos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
