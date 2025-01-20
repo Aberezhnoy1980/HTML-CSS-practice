@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminar 8: HTML5 structure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="top">
+        <header class="top__header"></header>
+    </section>
+    <section class="content">
+        <article class="article1"></article>
+        <article class="article2"></article>
+        <article class="article3"></article>
+    </section>
+    <section></section>
+    <section>
+        <article></article>
+        <article></article>
+        <article></article>
+    </section>
+    <section></section>
+    <section></section>
+    <section class="reg">
+        <h2>Регистрация</h2>
+        <h3>Обязательные поля для заполенения *</h3>
+        <form action="#" class="registration">
+            <label for="name" class="name">Имя<em>*</em></label>
+            <input id="name" type="text" class="name__input" title="Ваше имя" placeholder="Ivan" required autofocus>
+            <br>
+            <label for="email" class="email">Электронная почта<em>*</em></label>
+            <input id="email" type="email" class="email__input" title="Адрес электронной почты" required
+                placeholder="ivan@example.com">
+            <br>
+            <label for="password" class="pass">Пароль<em>*</em></label>
+            <input id="password" type="password" class="pass__input" required>
+            <br>
+            <label for="age" class="age">Возраст<em>*</em></label>
+            <input id="age" type="number" class="age__input" required value="18" min="18" step="1">
+            <br>
+            <label for="birthdate" class="birthdate">Дата рождения<em>*</em></label>
+            <input id="birthdate" type="date" class="bd__input" required placeholder="2000-09-01">
+            <br>
+            <label for="tel" class="telephone">Номер телефона</label>
+            <input id="tel" type="tel" class="telephone__input" required placeholder="+7(xxx)-xxx-xx-xx">
+            <br>
+            <label for="experience" class="experience">Стаж</label>
+            <input id="experience" type="range" class="experience" min="1" max="10" value="5">
+            <br>
+            <input id="check" type="checkbox">
+            <label for="check">text</label>
+            <br>
+            <button type="submit">Отправить заявку</button>
+        </form>
+    </section>
+    <footer>
+        <nav></nav>
+    </footer>
+
+</body>
+
+</html>
