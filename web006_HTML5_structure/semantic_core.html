@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header"></header>
+    <nav class="menu">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </nav>
+    <main>
+        <section class="about">
+            <h2>Обо мне</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quae fugit nemo ut nobis aspernatur
+                officia exercitationem quos, deleniti qui molestiae ipsam est, porro corrupti et esse labore nulla?
+                Consectetur.</p>
+        </section>
+        <section class="skills">
+            <h2>Мои навыки</h2>
+            <article class="html">
+                <h3>HTML5</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, aliquid?</p>
+            </article>
+            <article class="css">
+                <h3>CSS3</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, inventore?</p>
+            </article>
+            <article class="js">
+                <h3>JS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore consequatur dolorem tempora dolore
+                    repudiandae voluptatem explicabo error fuga? Eveniet esse iste doloribus accusamus temporibus vitae
+                    ipsa
+                    dolor ea molestiae doloremque.</p>
+            </article>
+        </section>
+        <section class="first__steps">
+            <h2>Первые шаги в веб-разработке</h2>
+            <figure>
+                <img src="#" alt="ЗП">
+                <figcaption>Уровень ЗП</figcaption>
+                <div>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <ul>
+                        <li>list-1</li>
+                        <li>list-2</li>
+                        <li>list-3</li>
+                        <li>list-4</li>
+                    </ul>
+                </div>
+            </figure>
+        </section>
+        <section class="story">
+            <h2>Истории обо мне</h2>
+            <details open>
+                <summary>История работы в первой компании</summary>
+                <h3>Название компании</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo corrupti laboriosam, non qui adipisci amet
+                velit ut quis vel, et magnam excepturi maiores distinctio minus tempora quaerat. Quam, dolorem numquam.
+                <h4>Минусы которые встретил</h4>
+                <ul>
+                    <li>item1</li>
+                    <li>item2</li>
+                    <li>item3</li>
+                    <li>item4</li>
+                </ul>
+            </details>
+            <details>
+                <summary>Опыт работы</summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quod nulla suscipit repellat velit at ea
+                    harum aliquam amet quam ipsa, iusto fugit eaque aut voluptatum neque, incidunt dolorum vel.</p>
+            </details>
+        </section>
+        <section class="registration">
+            <h2>Оставить заявку на проект</h2>
+            <form action="#" class="order">
+                <label for="name">Ваше имя<em>*</em></label>
+                <input id="name" title="Обязательное поле ввода" type="text" required placeholder="Иван" autofocus>
+                <br>
+                <label for="email">Почта<em>*</em></label>
+                <input type="email" name="email" id="email" placeholder="email">
+                <br>
+                <label for="start_date">Дата старта разработки проекта</label>
+                <input type="date" name="start_date" id="start_date">
+                <br>
+                <label for="qnty">Количество проектов</label>
+                <input type="number" name="qnty" id="qnty" value="3" min="1" max="5" step="1">
+                <br>
+                <label for="limits">Какие границы</label>
+                <input type="range" name="limits" id="limits" value="6" min="1" max="12" step="1">
+                <button type="submit">Оставить заявку</button>
+            </form>
+        </section>
+        <section class="music">
+            <audio controls autoplay loop preload="auto" src="/Users/alex/Documents/Study/Portfolio/StarGame/core/assets/audio/gameOver.mp3" class="audio"></audio>
+        </section>
+        <section class="movies">
+            <h2 class="video-heading">Крутое видео</h2>
+            <video controls preload="auto" src="video.mp4" class="video"></video>
+        </section>
+    </main>
+    <footer class="footer"></footer>
+</body>
+
+</html>

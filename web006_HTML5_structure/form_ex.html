@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример формы HTML5</title>
+</head>
+
+<body>
+    <form action="#">
+        <h2>Пожалуйста, заполните форму регистрации пользователей. Обязательные поля отмечены *</h2>
+        <h3>Контактная информация</h3>
+        <label for="name2">Фамилия<em>*</em></label>
+        <input id="name2" type="text" placeholder="Иванов" autofocus required><br>
+        <label for="name">Имя<em>*</em></label>
+        <input id="name" type="text" placeholder="Иван" required><br>
+        <label for="telephone">Телефон<em>*</em></label>
+        <input id="telephone" type="tel" required><br>
+        <label for="email">Email<em>*</em></label>
+        <input id="email" type="email" required><br>
+        <h3>Персональная информация</h3>
+        <label for="age">Возраст<em>*</em></label>
+        <input id="age" type="number" min="18" max="120" step="1"><br>
+        <label for="gender">Пол</label>
+        <select name="gender" id="gender">
+            <option value="female">Женский</option>
+            <option value="male">Мужской</option>
+        </select><br>
+        <div>
+            <label for="comments">Перечислитие дополнительную информацию, которую вы хотели бы сообщить о себе</label>
+        </div>
+        <textarea name="comments" id="comments"></textarea>
+        <h3>Выберите ваши увлечения</h3>
+        <label for="sport"><input id="sport" type="checkbox">Спорт</label>
+        <label for="turist"><input id="turist" type="checkbox">Туризм</label>
+        <label for="padi"><input id="padi" type="checkbox">Дайвинг</label>
+        <label for="travels"><input type="checkbox">Путешествия</label>
+        <label for="auto"><input type="checkbox">Автомобили</label>
+        <label for="it"><input id="it" type="checkbox">IT</label>
+        <div><button type="submit">Отправить информацию</button></div>
+    </form>
+
+    <h2>Виберите ваш любимый фрукт</h2>
+    <label for="fruit">Фрукт</label>
+    <datalist id="dl_fruits">
+        <option label="Яблоко" value="apple"></option>
+        <option label="Ананас" value="ananas"></option>
+        <option label="Абрикос" value="apricot"></option>
+        <option label="Арбуз" value="watermelon"></option>
+        <option label="Авокадо" value="avocado"></option>
+        <option label="Апельсин" value="orange"></option>
+    </datalist>
+    <input id="fruit" list="dl_fruits">
+</body>
+
+</html>
