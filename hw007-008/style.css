@@ -8,6 +8,10 @@ body {
     font-style: normal;
 }
 
+img {
+    max-width: 100%;
+}
+
 .center {
     padding-left: calc(50% - 570px);
     padding-right: calc(50% - 570px);
@@ -64,8 +68,9 @@ body {
 
 .brand {
     font-style: normal;
-    font-weight: black;
+    font-weight: 900;
     font-size: 48px;
+    line-height: 42px;
     color: #222222;
 }
 
@@ -79,10 +84,40 @@ body {
     padding-top: 65px;
     padding-bottom: 96px;
     display: grid;
-    /* grid-template-columns: repeat(3, 1fr); */
-    /* grid-template-rows: repeat(2, 1fr); */
     grid-template: 260px 180px / repeat(3, 1fr);
     gap: 30px;
+}
+
+.offer__item {
+    position: relative;
+}
+
+.offer__content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer__text {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+}
+
+.offer__heading {
+    font-style: normal;
+    font-weight: 400;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #f16d7f;
 }
 
 .wide__img {
@@ -222,10 +257,6 @@ body {
         padding-bottom: 110px;
     }
 
-    .offer img {
-        width: 100%;
-    }
-
     .products__content {
         grid-template: repeat(3, 1fr) / repeat(2, 1fr);
         gap: 30px;
@@ -235,5 +266,96 @@ body {
 
     .product img {
         width: 360px;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav__menu {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .menu__img4 {
+        display: none;
+    }
+
+    .menu__img5 {
+        display: none;
+    }
+
+    .top__content {
+        min-height: 363px;
+    }
+
+    .top__content {
+        justify-content: center;
+    }
+
+    .top__img {
+        display: none;
+    }
+
+    .img__title {
+        width: 12px;
+        height: 61px;
+    }
+
+    .title__text {
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+    }
+    .fashion {
+        font-size: 20px;
+    }
+
+    .brand {
+        font-size: 38px;
+    }
+
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .offer {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        justify-content: center;
+        justify-items: center;
+        padding-bottom: 64px;
+    }
+
+    .offer img {
+        width: 100%;
+    }
+
+    .wide__img {
+        background-image: url("./img/accesories.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+        min-height: 111px;
+    }
+
+    .offer__img4 {
+        display: none;
+    }
+
+    .products__content {
+        grid-template-columns: 360px;
+        gap: 16px;
+        margin-top: 65px;
+        margin-bottom: 41px;
+    }
+
+    .product__info {
+        gap: 13px;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+
+    .product__descr {
+        margin-bottom: 5px;
     }
 }
