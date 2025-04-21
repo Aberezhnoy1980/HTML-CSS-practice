@@ -1,0 +1,36 @@
+.parrent {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    background-color: red;
+    border: 1px solid forestgreen;
+}
+
+.child {
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    background-color: #000;
+    border: 1px solid orange;
+    top: 0;
+    right: 500px;
+}
+
+.call-hidden {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    border: 1px solid deepskyblue;
+    border-radius: 50%;
+}
+
+.call-hidden:hover {
+    background-color: white;
+    visibility: visible;
+}

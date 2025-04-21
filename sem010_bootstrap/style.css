@@ -1,0 +1,35 @@
+.ho {
+    height: 300px;
+    overflow: scroll;
+}
+
+.carousel-indicators [data-bs-target] {
+    height: 30px;
+    border-radius: 50%;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("img/arrow_left.svg");
+}
+
+.carousel-control-next-icon {
+    background-image: url("img/arrow_right.svg");
+}
+
+.navbar {
+    background-color: #eee;
+    position: relative;
+}
+
+.navbar-collapse {
+    position: absolute;
+    padding: 16px;
+    width: 150px;
+    background-color: #eee;
+    top: 54px;
+    right: 0;
+} 
+
+.nav-item {
+    text-align: right;
+}

@@ -1,0 +1,13 @@
+.text-color {
+    color: orangered;
+}
+
+.nav-background {
+    background-color: grey;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+

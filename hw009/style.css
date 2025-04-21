@@ -3,6 +3,16 @@
     margin: 0;
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
 body {
     font-family: "Lato", sans-serif;
     font-style: normal;
@@ -43,6 +53,12 @@ ul {
     gap: 41px;
 }
 
+.toggler-item {
+    background: url("./img/hamb.svg");
+    width: 23px;
+    height: 32px;
+}
+
 .menu__right__part {
     margin-top: 26px;
     margin-bottom: 20px;
@@ -52,6 +68,12 @@ ul {
     align-items: center;
     gap: 33px;
 }
+
+.menu__img3 {
+    position: relative;
+}
+
+
 
 .top__content {
     background-color: #F1E4E6;
@@ -162,6 +184,53 @@ ul {
     background: #F8F8F8;
     display: flex;
     flex-direction: column;
+}
+
+.product__image {
+    position: relative;
+    width: 100%;
+}
+
+.product__image-wrapper {
+    position: relative;
+  }
+
+.product__image-wrapper:after {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    inset: 0;
+    background-color: rgba(58, 56, 56, 0.86);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.product__add {
+    position: absolute;
+    z-index: 15;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    border: 1px solid #fff;
+    padding: 14px 16px 13px 50px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    background-color: transparent;
+    background-image: url("../hw009/img/cart.svg");
+    background-repeat: no-repeat;
+    background-position: 13px 11px;
+    cursor: pointer;
+}
+
+.product:hover .product__image-wrapper:after {
+    opacity: 1;
+}
+
+.product:hover .product__add {
+    opacity: 1;
 }
 
 .product__info {
