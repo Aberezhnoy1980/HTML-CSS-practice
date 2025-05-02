@@ -1,0 +1,36 @@
+.nav__link {
+  font-family: sans-serif;
+  font-style: normal;
+}
+
+.test {
+  background-color: lightgreen;
+  border: 2px solid yellowgreen;
+}
+
+.container__header_color {
+  color: #8a2be2;
+}
+
+.nav {
+  display: flex;
+  gap: 16px;
+}
+.nav__link {
+  text-decoration: none;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  box-sizing: border-box;
+}
+.content__item {
+  box-sizing: inherit;
+  width: calc(25% - 12px);
+  height: 200px;
+  border: 1px solid #000;
+}/*# sourceMappingURL=style.css.map */

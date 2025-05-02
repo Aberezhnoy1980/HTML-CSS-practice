@@ -1,0 +1,74 @@
+$widthDuck: 75px;
+$duckNumber: 5;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@for $i from 1 through $duckNumber {
+  @keyframes duck-fly-#{$i} {
+    0% {
+      left: -$widthDuck;
+      top: random(90) + vh;
+    }
+
+    50% {
+      left: random(60) + vw;
+      top: random(90) + vh;
+    }
+
+    100% {
+      left: 100vw;
+      top: random(90) + vh;
+    }
+  }
+}
+
+.body {
+  counter-reset: count;
+  height: 100vh;
+  background-image: url("img/duck-hunt-video-game-far-shot-vc79ubhfyndvj8ya.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.duck-check {
+  position: absolute;
+  visibility: hidden;
+  left: -9999999px;
+
+  &:checked {
+    counter-increment: count;
+  }
+
+  &:checked ~ label {
+    display: none;
+  }
+}
+
+.counter-info {
+  position: absolute;
+  top: 14px;
+  right: 24px;
+
+  &::before {
+    content: counter(count);
+  }
+}
+
+.duck {
+  position: absolute;
+
+  &__img {
+    width: $widthDuck;
+  }
+
+  @for $i from 1 through $duckNumber {
+      &_#{$i} {
+        animation: duck-fly-#{$i} 5s cubic-bezier(0.39, 0.575, 0.565, 1) #{$i}s both;
+      }
+  }
+}

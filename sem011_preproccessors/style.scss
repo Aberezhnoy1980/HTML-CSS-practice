@@ -1,0 +1,44 @@
+@import 'vars';
+@import 'mixins';
+
+%font {
+	font-family: sans-serif;
+	font-style: normal;
+}
+
+.test {
+	background-color: lightgreen;
+	border: 2px solid yellowgreen;
+}
+
+// BEM-methodology -
+.container {
+	&__header {
+		&_color {
+			color: $siteColor;
+		}
+	}
+}
+
+.nav {
+	display: flex;
+	gap: $gap;
+
+	&__link {
+		text-decoration: none;
+		@extend %font;
+	}
+}
+
+.content {
+	@include flexCentrator();
+	gap: $gap;
+	box-sizing: border-box;
+	
+	&__item {
+		box-sizing: inherit;
+		width: calc(25% - $gap * 3 / 4);
+		height: 200px;
+		border: $border;
+	}
+}

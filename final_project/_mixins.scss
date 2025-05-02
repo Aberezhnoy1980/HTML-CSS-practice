@@ -1,7 +1,8 @@
-@mixin centerflex($gap, $justifyContent, $alignItems) {
+@mixin flex-setting($direction, $justifyContent, $alignItems, $wrap, $gap) {
     display: flex;
+    flex-direction: $direction;
     justify-content: $justifyContent;
     align-items: $alignItems;
-    flex-wrap: wrap;
+    flex-wrap: $wrap;
     gap: $gap;
 }
