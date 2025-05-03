@@ -1,0 +1,113 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+@font-face {
+	font-family: "Merriweather";
+	src: url("fonts/Merriweather-VariableFont_opszwdthwght.woff2")
+			format("woff2"),
+		url("fonts/Merriweather-VariableFont_opszwdthwght.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "OpenSans";
+	src: url("fonts/OpenSans-VariableFont_wdthwght.woff2") format("woff2"),
+		url("fonts/OpenSans-VariableFont_wdthwght.woff") format("wowff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+.container {
+	padding: 0 calc(50% - calc(1140px / 2));
+}
+
+
+.heading {
+	border: 30px solid #40c4c8;
+    padding: 20px;
+	font-family: "Merriweather";
+	border-image: url("img/css_border-image-1.png") 30 round round;
+}
+
+.paragraph {
+	font-family: "OpenSans";
+	border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+	border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+
+.decor {
+	color: transparent;
+    font-size: 50px;
+    -webkit-text-stroke: 1px blue;
+}
+
+.triangle {
+	width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 100px 0 100px 200px;
+    border-color: transparent transparent transparent #007bff;
+}
+
+.top-head {
+	background: #f8f3f4;
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__heading {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 29px;
+		color: #f16d7f;
+	}
+}
+
+.breadcrumbs {
+	&__ul {
+		display: flex;
+		list-style-type: none;
+	}
+
+	&__link {
+		text-decoration: none;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 17px;
+		color: #636363;
+
+		&:hover {
+			color: #f16d7f;
+		}
+	}
+
+	&__li:not(:last-child)::after {
+		content: "/";
+		padding-left: 8px;
+		padding-right: 8px;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 17px;
+		color: #636363;
+	}
+
+	&__li:last-child .breadcrumbs__link {
+		font-weight: 700;
+		color: #f16d7f;
+	}
+}

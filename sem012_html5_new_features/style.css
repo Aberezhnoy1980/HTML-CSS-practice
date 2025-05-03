@@ -1,0 +1,136 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+summary {
+  display: block;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::before {
+  content: "→";
+  padding-right: 0.5em;
+}
+
+.details__item {
+  color: forestgreen;
+}
+.details[open] > summary::before {
+  content: "↓";
+}
+
+.sort {
+  display: flex;
+  gap: 28px;
+}
+.sort__item {
+  position: relative;
+}
+.sort__item > summary::before {
+  content: "";
+}
+.sort__heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sort__box {
+  position: absolute;
+  left: 9px;
+  top: 20px;
+  background: #ffffff;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  min-width: 79px;
+  padding: 7px 30px 11px 9px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.center {
+  padding: 0px calc(50% - 570px);
+}
+
+.top {
+  overflow: hidden;
+}
+
+#bm {
+  position: absolute;
+  left: -99999px;
+  visibility: hidden;
+}
+#bm:checked ~ .menu {
+  right: -232px;
+}
+
+.header {
+  position: relative;
+  height: 75px;
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  width: 232px;
+  position: absolute;
+  top: 75px;
+  right: 0;
+  padding: 32px;
+  box-sizing: border-box;
+  transition: right 0.5s;
+  background-color: #fff;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+.menu__heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000;
+  margin-bottom: 4px;
+}
+.menu__subheading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  margin-bottom: 12px;
+  margin-top: 20px;
+}
+.menu__ul {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  list-style-type: none;
+  padding-left: 20px;
+}
+.menu__link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+.menu__link:hover {
+  color: #F16D7F;
+}
+
+.promo {
+  height: 764px;
+  background-color: #F1E4E6;
+}/*# sourceMappingURL=style.css.map */

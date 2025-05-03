@@ -1,0 +1,211 @@
+$widthBurgerMenu: 232px;
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+summary {
+	display: block;
+}
+
+summary::-webkit-details-marker {
+	display: none;
+}
+
+// summary::marker {
+//     content: "\2192";
+// }
+
+summary::before {
+	content: "\2192";
+	padding-right: 0.5em;
+}
+
+// .content-box {
+//     overflow: hidden;
+// }
+
+.details {
+	&__item {
+		color: forestgreen;
+	}
+
+	// &[open] summary::marker {
+	//     content: "\2193";
+	// }
+
+	&[open] > summary::before {
+		content: "\2193";
+	}
+}
+
+// Task 2
+.sort {
+	display: flex;
+	gap: 28px;
+
+	&__item {
+		position: relative;
+	}
+
+	&__item > summary::before {
+		content: "";
+	}
+
+	&__heading {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+
+	&__box {
+		position: absolute;
+		// z-index: 1;
+		left: 9px;
+		top: 20px;
+		background: #ffffff;
+		box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+		min-width: 79px;
+		padding: 7px 30px 11px 9px;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		gap: 6px;
+	}
+}
+
+// Task 3
+// .burger-menu {
+// 	position: relative;
+// 	display: flex;
+// 	justify-content: flex-end;
+
+//     &__nav {
+//         background: #fff;
+//         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+//         width: $widthBurgerMenu;
+//         padding: 37px 0 32px 32px;
+//         box-sizing: border-box;
+//         position: absolute;
+//         z-index: 11;
+//         top: 83px;
+//         right: 0;
+//         transition: right 0.3s;
+//     }
+
+//     &__menu-x-close {
+// 		position: absolute;
+// 		z-index: 12;
+// 		top: calc(16px + 83px);
+// 		right: 17px;
+// 		background: none;
+// 		cursor: pointer;
+// 		border: none;
+// 		fill: #575757;
+// 		transition: right 0.3s;
+// 	}
+// }
+
+// #burger {
+// 	position: absolute;
+// 	left: -999999px;
+// 	visibility: hidden;
+
+// 	&:checked ~ .burger-menu__nav {
+// 		right: -$widthBurgerMenu;
+// 	}
+
+// 	&:checked ~ .burger-menu__menu-x-close {
+// 		right: -$widthBurgerMenu;
+// 	}
+// }
+
+// Seminar
+.center {
+    padding: 0px calc(50% - calc(1140px / 2));
+}
+
+.top {
+    overflow: hidden;
+}
+
+#bm {
+    position: absolute;
+    left: -99999px;
+    visibility: hidden;
+
+    &:checked ~ .menu {
+        right: -232px;
+    }
+}
+
+.header {
+    position: relative;
+    height: 75px;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    width: 232px;
+    position: absolute;
+    top: 75px;
+    right:  0;
+    padding: 32px;
+    box-sizing: border-box;
+    transition: right 0.5s;
+    background-color: #fff;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+
+    &__heading {
+        font-style:  normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000;
+        margin-bottom: 4px;
+    }
+
+    &__subheading {
+        font-style:  normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #F16D7F;
+        margin-bottom: 12px;
+        margin-top: 20px;
+    }
+
+    &__ul {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        list-style-type: none;
+        padding-left: 20px;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-style:  normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+
+        &:hover {
+            color: #F16D7F;
+        }
+    }
+}
+
+.promo {
+    height: 764px;
+    background-color: #F1E4E6;
+}
