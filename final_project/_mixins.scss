@@ -6,3 +6,9 @@
     flex-wrap: $wrap;
     gap: $gap;
 }
+
+@mixin button-hover() {
+    color: #fff;
+    background-color: $colorSelectSite;
+    border-color: $colorSelectSite;
+}
