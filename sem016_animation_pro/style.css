@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  counter-reset: light;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url("./img/night_earth.jpg");
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+}
+
+@keyframes light-on-1 {
+  0% {
+    fill: transparent;
+  }
+  50% {
+    fill: yellow;
+  }
+  100% {
+    fill: transparent;
+  }
+}
+@keyframes light-on-2 {
+  0% {
+    fill: transparent;
+  }
+  50% {
+    fill: yellow;
+  }
+  100% {
+    fill: transparent;
+  }
+}
+@keyframes light-on-3 {
+  0% {
+    fill: transparent;
+  }
+  50% {
+    fill: yellow;
+  }
+  100% {
+    fill: transparent;
+  }
+}
+@keyframes light-on-4 {
+  0% {
+    fill: transparent;
+  }
+  50% {
+    fill: yellow;
+  }
+  100% {
+    fill: transparent;
+  }
+}
+@keyframes light-on-5 {
+  0% {
+    fill: transparent;
+  }
+  50% {
+    fill: yellow;
+  }
+  100% {
+    fill: transparent;
+  }
+}
+@keyframes light-on-6 {
+  0% {
+    fill: transparent;
+  }
+  50% {
+    fill: yellow;
+  }
+  100% {
+    fill: transparent;
+  }
+}
+@keyframes light-on-7 {
+  0% {
+    fill: transparent;
+  }
+  50% {
+    fill: yellow;
+  }
+  100% {
+    fill: transparent;
+  }
+}
+@keyframes light-on-8 {
+  0% {
+    fill: transparent;
+  }
+  50% {
+    fill: yellow;
+  }
+  100% {
+    fill: transparent;
+  }
+}
+@keyframes light-on-9 {
+  0% {
+    fill: transparent;
+  }
+  50% {
+    fill: yellow;
+  }
+  100% {
+    fill: transparent;
+  }
+}
+@keyframes light-on-10 {
+  0% {
+    fill: transparent;
+  }
+  50% {
+    fill: yellow;
+  }
+  100% {
+    fill: transparent;
+  }
+}
+@keyframes light-on-11 {
+  0% {
+    fill: transparent;
+  }
+  50% {
+    fill: yellow;
+  }
+  100% {
+    fill: transparent;
+  }
+}
+@keyframes light-on-12 {
+  0% {
+    fill: transparent;
+  }
+  50% {
+    fill: yellow;
+  }
+  100% {
+    fill: transparent;
+  }
+}
+@keyframes light-on-13 {
+  0% {
+    fill: transparent;
+  }
+  50% {
+    fill: yellow;
+  }
+  100% {
+    fill: transparent;
+  }
+}
+@keyframes light-on-14 {
+  0% {
+    fill: transparent;
+  }
+  50% {
+    fill: yellow;
+  }
+  100% {
+    fill: transparent;
+  }
+}
+@keyframes light-on-15 {
+  0% {
+    fill: transparent;
+  }
+  50% {
+    fill: yellow;
+  }
+  100% {
+    fill: transparent;
+  }
+}
+.lamp-box {
+  position: absolute;
+  width: 35px;
+}
+.lamp-box__lamp {
+  position: absolute;
+  left: -999999px;
+  visibility: hidden;
+}
+.lamp-box__lamp:checked {
+  counter-increment: light;
+}
+.lamp-box__lamp:checked ~ label {
+  display: none;
+}
+.lamp-box_1 {
+  left: 70vw;
+  top: 52vh;
+  animation: light-on-1 3s linear 2s both;
+}
+.lamp-box_2 {
+  left: 52vw;
+  top: 36vh;
+  animation: light-on-2 3s linear 4s both;
+}
+.lamp-box_3 {
+  left: 28vw;
+  top: 51vh;
+  animation: light-on-3 3s linear 6s both;
+}
+.lamp-box_4 {
+  left: 71vw;
+  top: 28vh;
+  animation: light-on-4 3s linear 8s both;
+}
+.lamp-box_5 {
+  left: 81vw;
+  top: 50vh;
+  animation: light-on-5 3s linear 10s both;
+}
+.lamp-box_6 {
+  left: 59vw;
+  top: 45vh;
+  animation: light-on-6 3s linear 12s both;
+}
+.lamp-box_7 {
+  left: 33vw;
+  top: 44vh;
+  animation: light-on-7 3s linear 14s both;
+}
+.lamp-box_8 {
+  left: 35vw;
+  top: 88vh;
+  animation: light-on-8 3s linear 16s both;
+}
+.lamp-box_9 {
+  left: 32vw;
+  top: 80vh;
+  animation: light-on-9 3s linear 18s both;
+}
+.lamp-box_10 {
+  left: 3vw;
+  top: 81vh;
+  animation: light-on-10 3s linear 20s both;
+}
+.lamp-box_11 {
+  left: 47vw;
+  top: 40vh;
+  animation: light-on-11 3s linear 22s both;
+}
+.lamp-box_12 {
+  left: 76vw;
+  top: 40vh;
+  animation: light-on-12 3s linear 24s both;
+}
+.lamp-box_13 {
+  left: 32vw;
+  top: 85vh;
+  animation: light-on-13 3s linear 26s both;
+}
+.lamp-box_14 {
+  left: 27vw;
+  top: 38vh;
+  animation: light-on-14 3s linear 28s both;
+}
+.lamp-box_15 {
+  left: 3vw;
+  top: 46vh;
+  animation: light-on-15 3s linear 30s both;
+}
+
+.count {
+  position: absolute;
+  top: 14px;
+  right: 24px;
+}
+.count::after {
+  content: counter(light);
+  color: white;
+}/*# sourceMappingURL=style.css.map */

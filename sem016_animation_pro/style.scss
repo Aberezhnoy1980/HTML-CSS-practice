@@ -1,0 +1,79 @@
+$lampCount: 15;
+$lampWidth: 35px;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	counter-reset: light;
+}
+
+body {
+	min-height: 100vh;
+	background-image: url("./img/night_earth.jpg");
+	background-origin: border-box;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+img {
+	max-width: 100%;
+}
+
+@for $i from 1 through $lampCount {
+	@keyframes light-on-#{$i} {
+		0% {
+			fill: transparent;
+		}
+
+		50% {
+			fill: yellow;
+		}
+
+		100% {
+			fill: transparent;
+		}
+	}
+}
+
+.lamp-box {
+	position: absolute;
+	width: 35px;
+
+	&__lamp {
+		position: absolute;
+		left: -999999px;
+		visibility: hidden;
+	}
+
+	&__lamp:checked {
+		counter-increment: light;
+	}
+
+	&__lamp:checked ~ label {
+		display: none;
+	}
+
+	@for $i from 1 through $lampCount {
+		&_#{$i} {
+			left: random(90) + vw;
+			top: random(90) + vh;
+			animation: light-on-#{$i} 3s linear #{calc($i * 2)} + s both;
+		}
+	}
+}
+
+.count {
+	position: absolute;
+	top: 14px;
+	right: 24px;
+
+	&::after {
+		content: counter(light);
+		color: white;
+	}
+}
