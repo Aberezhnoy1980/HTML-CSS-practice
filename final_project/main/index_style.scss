@@ -554,7 +554,7 @@ summary::-webkit-details-marker {
 // Footer
 .footer {
 	background-color: #222224;
-	padding: 24px 0;
+	padding: 24px 32px;
 
 	&__container {
 		@include flex-setting(initial, space-between, center, wrap, initial);
